@@ -87,6 +87,63 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* General stypes */
+
+   html {
+  font-size: 16px
+   }
+
+   body {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 1em;
+   }
+
+   ul, ol {
+     list-style-type: none;
+   }
+
+   a {
+     color: #e2e3ed;
+     font-size: 1.13em;
+     text-decoration: none;
+   }
+
+   h1 {
+     color: #e2e3ed;
+     font-size: 3.75em;
+   }
+
+   h2 {
+     color: #e2e3ed;
+     font-family: 'Poppins', sans-serif;
+     font-size: 2.25em;
+   }
+
+   h3, h4 {
+     color: #e2e3ed;
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.88em;
+     font-style: normal;
+   }
+
+   p {
+     color: #e2e3ed;
+     line-height: 1.8em;
+     font-style: normal;
+   }
+
+   img {
+     width: 100%;
+   }
+
+   figure {
+     margin:0;
+   }
+
+   address {
+
+   }
+
    .content-wrapper {
      width: 90%;
      margin: 50px 0;
@@ -99,11 +156,13 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background-color: #202322;
    }
 
    /* Header styles */
 
    header {
+
      padding: 15px 0;
    }
 
@@ -113,6 +172,14 @@ textarea {
      align-items: center;
      flex-flow: row wrap;
      margin: 0;
+   }
+
+    header figure {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
    }
 
    .header-divider {
@@ -180,6 +247,8 @@ textarea {
 
    /* Hero area */
    .hero-area {
+     background: url('../img/bridge.jpg') center no-repeat #333;
+     background-size: cover;
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
@@ -196,19 +265,40 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background-color: #527158;
    }
 
-  /* .form-description {
-     padding: 25px 0;
+   aside .form {
+     margin-top: 30px;
    }
 
-   .form {
+   input[type=text] {
+     box-sizing: border-box;
+     width: 100%;
+     color: #2a423a;
+     font-style: italic;
+     padding: 1em;
+   }
 
-   }*/
+   input[type=button] {
+     width: 100%;
+     padding: 20px 0;
+     margin-top: 20px;
+     background-color: #2a423a;
+     font-family: 'Poppins', Helvetica, Arial, sans-serif;
+     font-weight: 500;
+     font-size: 1.125em;
+     color: #e2e3ed;
+     border: none;
+     text-align: center;
+     text-transform: uppercase;
+   }
 
    /* Features */
 
    .features {
+     background: url('../img/fire-72.jpg') center no-repeat #333;
+     background-size: cover;
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
@@ -222,18 +312,25 @@ textarea {
    .features article {
      width: 63%;
      margin: 30px 0;
+
    }
 
    .features .features-items {
      display: flex;
      justify-content: center;
-     align-items: center;
+     align-items: baseline;
      flex-flow: row wrap;
-     /*text-align:center; going to use this later. */
    }
+
+   .features i {
+     font-size: 3.75em;
+     margin-bottom: 40px;
+   }
+
 
    .features p {
      margin: 0;
+     text-align: center;
    }
 
    .features .features-item-description {
@@ -247,6 +344,14 @@ textarea {
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
+     background-color: #2a423a;
+   }
+
+   .reviews figure {
+     width: 90%;
+     margin: 26px 0;
+     display: flex;
+
    }
 
    .reviews h1 {
@@ -254,7 +359,7 @@ textarea {
    }
 
    .reviews h3 {
-     width: 55%;
+     /*width: 55%;*/
      margin: 20px 0;
    }
 
@@ -268,6 +373,7 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background-color: #527158;
    }
 
    /*.mission-content {
@@ -286,6 +392,7 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background: #2a423a;
    }
 
    .contact-section p {
@@ -300,6 +407,22 @@ textarea {
 
    }*/
 
+   .map figure {
+     width: 100%;
+     height: 0;
+     padding-bottom: 125%;
+     overflow: hidden;
+     position: relative;
+   }
+
+   .map iframe {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+   }
+
    /*----------------- Mobile Styles - FAQ ----------------------*/
 
    /* FAQ */
@@ -309,6 +432,7 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background-color: #527158;
    }
 
    .faq .content-wrapper {
@@ -419,7 +543,8 @@ textarea {
 /* Tablet styles */
 @media only screen and (min-width: 768px) {
 
-  /* General stypes */
+  /* General */
+
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
@@ -436,12 +561,20 @@ textarea {
     justify-content: space-between;
   }
 
+  header figure {
+    width: 40%;
+  }
+
   header nav {
     width: 130px;
   }
 
   header nav ul {
     justify-content: space-between;
+  }
+
+  header nav ul a{
+    padding-left: 28px;
   }
 
   .header-divider {
@@ -490,12 +623,14 @@ textarea {
 
   /* Footer */
   footer .content-wrapper {
-    width: 500px;
+    width: 100%;
     margin: 100px 0;
   }
 
   .footer-content {
     display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
     text-align: center;
   }
 
@@ -522,6 +657,10 @@ textarea {
  .mission-content p {
      width: 50%;
      padding-right: 40px; /*this isn't neat, I would prefer it if it was neater, why did it move the content? */
+ }
+
+ .map figure {
+   padding-bottom: 75%;
  }
 
  .contact-section .content-wrapper h2 {
@@ -557,6 +696,35 @@ textarea {
 
 /* Desktopstyles */
 @media only screen and (min-width: 1200px) {
+
+  .content-wrapper {
+    max-width: 968px;
+  }
+
+  header figure {
+    width: 28%;
+  }
+
+  /* Homepage desktop */
+
+  .features article {
+    flex-basis: 30%;
+  }
+
+  footer .content-wrapper {
+    width: 968px;
+  }
+
+  /* About page desktop */
+
+  .map figure {
+     padding-bottom: 33%;
+  }
+
+  /* FAQ page desktop */
+  .faq .content-wrapper h1 {
+    width: 100%;
+  }
 
 }
 
