@@ -90,45 +90,56 @@ textarea {
    /* General stypes */
 
    html {
-  font-size: 16px
+     font-size: 16px
    }
 
    body {
      font-family: 'Open Sans', sans-serif;
      font-size: 1em;
+     color: #e2e3ed;
    }
 
    ul, ol {
      list-style-type: none;
+     padding: 0;
+     margin: 0;
+     font-weight: bold;
+     font-size: 1.225em;
    }
 
    a {
      color: #e2e3ed;
      font-size: 1.13em;
      text-decoration: none;
+     text-transform: uppercase;
    }
 
    h1 {
-     color: #e2e3ed;
-     font-size: 3.75em;
+
+     font-family: 'Poppins', sans-serif;
+     font-size: 2.25em;
+     font-weight: 500;
+     margin: 0;
    }
 
    h2 {
-     color: #e2e3ed;
+
      font-family: 'Poppins', sans-serif;
-     font-size: 2.25em;
+     font-size: 1.875em;
+     font-weight: lighter;
    }
 
    h3, h4 {
-     color: #e2e3ed;
+
      font-family: 'Poppins', sans-serif;
-     font-size: 1.88em;
+     font-size: 1.25em;
      font-style: normal;
+     font-weight: lighter;
    }
 
    p {
-     color: #e2e3ed;
-     line-height: 1.8em;
+
+     line-height: 1.6em;
      font-style: normal;
    }
 
@@ -141,7 +152,7 @@ textarea {
    }
 
    address {
-
+     font-size: normal;
    }
 
    .content-wrapper {
@@ -162,7 +173,6 @@ textarea {
    /* Header styles */
 
    header {
-
      padding: 15px 0;
    }
 
@@ -183,12 +193,14 @@ textarea {
    }
 
    .header-divider {
+     background: #3a3a3a;
      width: 100%;
      margin: 10px 0 20px 0;
      height: 1px;
    }
 
    header nav {
+     text-transform: uppercase;
      display: flex;
      justify-content: space-around;
      align-items: center;
@@ -199,17 +211,12 @@ textarea {
    header nav ul {
      display: flex;
      justify-content: space-around;
-     /*list-style: none;*/
      width: 100%;
    }
 
-  /* header nav ul li a {
-     text-decoration: none;
-     margin-right: 54px;
-   }*/
-
    footer {
      flex-direction: column;
+     text-align: center;
    }
 
    footer p {
@@ -221,7 +228,7 @@ textarea {
      margin: 50px 0;
    }
 
-   footer .contact {
+   footer .contact  {
      margin-bottom: 50px;
    }
 
@@ -229,13 +236,21 @@ textarea {
      display: flex;
      justify-content: space-around;
      align-items: center;
-
    }
 
    footer .social-icons p {
+     background-color: #527158;
+     border-radius: 50%;
+     width: 40px;
+     height: 40px;
      display: flex;
      justify-content: center;
      align-items: center;
+   }
+
+   footer .social-icons p i {
+     font-size: 1.3125em;
+
    }
 
    footer .copyright {
@@ -249,6 +264,7 @@ textarea {
    .hero-area {
      background: url('../img/bridge.jpg') center no-repeat #333;
      background-size: cover;
+     min-height: 500px;
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
@@ -399,13 +415,11 @@ textarea {
      margin: 0;
    }
 
-  /* .general-info {
-
+   .contact-content {
+     display: flex;
+     justify-content: space-around;
+     align-items: flex-start;
    }
-
-   .facilitator-info {
-
-   }*/
 
    .map figure {
      width: 100%;
@@ -545,12 +559,25 @@ textarea {
 
   /* General */
 
+  h1 {
+      font-size: 3em;
+      margin: 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
   }
 
-  /* Home page */
+  /* General Header and Footer styles */
 
   header {
     padding: 30px 0;
@@ -566,22 +593,50 @@ textarea {
   }
 
   header nav {
-    width: 130px;
+    width: 25%;
   }
 
   header nav ul {
     justify-content: space-between;
-  }
-
-  header nav ul a{
-    padding-left: 28px;
+    font-weight: normal;
   }
 
   .header-divider {
     display: none;
   }
 
+  /* Footer */
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  .social {
+    width: 50%;
+  }
+
+
+
+
+  /* Home page */
+
   /* Hero area */
+
+  .hero-area {
+    min-height: 600px;
+  }
 
   /* Asidee */
 
@@ -621,33 +676,14 @@ textarea {
     width: 50%;
   }
 
-  /* Footer */
-  footer .content-wrapper {
-    width: 100%;
-    margin: 100px 0;
-  }
 
-  .footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    text-align: center;
-  }
-
-  footer .contact {
-    margin-bottom: 0;
-    width: 50%;
-  }
-
-  .social {
-    width: 50%;
-  }
 
   /*footer .copyright {
     width:
   }*/
 
   /* About page */
+
   .mission-content {
      display: flex;
      justify-content: space-between;
@@ -660,12 +696,12 @@ textarea {
  }
 
  .map figure {
-   padding-bottom: 75%;
+   padding-bottom: 55%;
  }
 
- .contact-section .content-wrapper h2 {
+ /*.contact-section .content-wrapper h2 {
      width:
- }
+ }*/
 
  .contact-content {
      display: flex;
@@ -697,12 +733,29 @@ textarea {
 /* Desktopstyles */
 @media only screen and (min-width: 1200px) {
 
+  h2 {
+    font-size: 3em;
+  }
+
+  h3, h4 {
+    font-size: 1.875em;
+  }
+
   .content-wrapper {
     max-width: 968px;
   }
 
   header figure {
-    width: 28%;
+    width: 30%;
+  }
+
+  nav ul li {
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  footer .content-wrapper {
+      width: 90%;
   }
 
   /* Homepage desktop */
@@ -711,14 +764,11 @@ textarea {
     flex-basis: 30%;
   }
 
-  footer .content-wrapper {
-    width: 968px;
-  }
 
   /* About page desktop */
 
   .map figure {
-     padding-bottom: 33%;
+     padding-bottom: 40%;
   }
 
   /* FAQ page desktop */
